@@ -5,16 +5,17 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 public class Memory {
+	private final static Color FRAME_BACKGROUND = new Color(231, 235, 202);
+
+	private final static int LOCATION = 400;
+
+	private final static int SIZE = 400;
+
 	public static void main(String[] args) {
-		System.out.println("Hello Stefanie!");
-
 		JFrame frame = new JFrame("Memory");
-		frame.setLocation(400, 400);
-		frame.setSize(400, 400);
-
-		Color frameBackground = new Color(231, 235, 202);
-
-		frame.getContentPane().setBackground(frameBackground);
+		frame.setLocation(LOCATION, LOCATION);
+		frame.setSize(SIZE, SIZE);
+		frame.getContentPane().setBackground(FRAME_BACKGROUND);
 		frame.setVisible(true);
 	}
 }
